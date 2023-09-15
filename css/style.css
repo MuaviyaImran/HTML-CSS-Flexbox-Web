@@ -236,7 +236,15 @@ footer address {
   font-weight: bold;
 }
 /* turn on flexbox here - prior to this, elements stacked individually as blocks */
+#popart figure {
+  background-color: var(--color8);
+}
 
+#popart figure img {
+  object-position: 0;
+  height: 100%;
+  object-fit: cover;
+}
 @media (min-width: 550px) {
   section ul {
     display: flex;
@@ -296,6 +304,28 @@ footer address {
   }
   #popular li:last-child img {
     object-position: 0 -350px;
+  }
+  #popart ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .col-span-2 {
+    grid-column: span 2;
+  }
+  .col-span-3 {
+    grid-column: span 3;
+  }
+
+  .row-span-2 {
+    grid-row: span 2;
+  }
+  .row-span-2 figure {
+    max-height: unset;
+  }
+  #popart ul li figure {
+    height: 100%;
   }
 }
 
