@@ -88,6 +88,7 @@ nav a {
 nav li:first-child a {
   background-color: transparent;
 }
+
 nav a:hover {
   background-color: var(--color1);
   color: var(--color5);
@@ -245,6 +246,17 @@ footer address {
   height: 100%;
   object-fit: cover;
 }
+#donut img {
+  width: 100%;
+}
+#donut ul {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+.d3 {
+  grid-row: 1/2;
+}
 @media (min-width: 550px) {
   section ul {
     display: flex;
@@ -373,5 +385,81 @@ footer address {
   }
   #popular li:last-child img {
     object-position: 0;
+  }
+
+  #donut ul {
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+  }
+  .d1 {
+    grid-column: 1/2;
+    grid-row: 1/4;
+  }
+  .d2 {
+    grid-column: 1/2;
+    grid-row: 4/6;
+  }
+  .d3 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .d4 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .d5 {
+    grid-column: 2/3;
+    grid-row: 3/6;
+  }
+  .d3 img,
+  .author {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .d3 img {
+    opacity: 0.2;
+  }
+  .author {
+    padding: 1rem;
+    z-index: 1000;
+  }
+}
+.bounce {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+.bounce:hover {
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+  60% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
   }
 }
