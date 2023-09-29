@@ -2,16 +2,15 @@
 Clearly there is more you could place in variables, up to you if you want to use them. My answer does not go beyond colors to keep the code easier to read. */
 
 :root {
-  --color1: #001219;
-  --color2: #005f73;
-  --color3: #3d9397;
-  --color4: #94d28d;
-  --color5: #e9d8a6;
-  --color6: #ee9800;
-  --color7: #ca6702;
-  --color8: #bb3e03;
-  --color9: #ae2012;
-  --color10: #9b2226;
+  --black: #001219;
+  --dkSeeGreen: #005f73;
+  --ltSeeGreen: #3d9397;
+  --ltGreen: #94d28d;
+  --ltYellow: #e9d8a6;
+  --ltOrange: #ee9800;
+  --dkOrange: #ca6702;
+  --dkdkOrange: #bb3e03;
+  --dkBrown: #9b2226;
 }
 
 /* generic site styles */
@@ -48,7 +47,7 @@ New styles begin here and continue to the end of the page
 ****************/
 
 .header {
-  background-color: var(--color5);
+  background-color: var(--ltYellow);
 }
 header {
   padding: 1rem;
@@ -79,7 +78,7 @@ nav a {
   font-size: 1.2rem;
   color: white;
   display: block;
-  background-color: var(--color10);
+  background-color: var(--dkBrown);
   padding: 0.5rem;
   border-radius: 5px;
   text-align: center;
@@ -90,14 +89,14 @@ nav li:first-child a {
 }
 
 nav a:hover {
-  background-color: var(--color1);
-  color: var(--color5);
+  background-color: var(--black);
+  color: var(--ltYellow);
 }
 
 /* hero styles */
 
 #hero {
-  background-color: var(--color7);
+  background-color: var(--dkOrange);
   text-align: center;
   max-width: 100%;
   padding: 0;
@@ -146,7 +145,7 @@ figure {
 /* strange open space at the bottom of the box which shows through the transparent overlay - this kills it */
 
 .stripe {
-  background-color: var(--color2);
+  background-color: var(--dkSeeGreen);
   color: white;
   padding: 1rem 0 2rem 0;
 }
@@ -173,45 +172,45 @@ figcaption a {
   display: block;
   padding: 1rem;
   text-decoration: none;
-  color: var(--color1);
+  color: var(--black);
 }
 
 /* style is doing double duty, styling border color and hover color. Only one declaration usually applies though.  */
 
 .color2,
 .color2 a:hover {
-  border-color: var(--color2);
-  color: var(--color2);
+  border-color: var(--dkSeeGreen);
+  color: var(--dkSeeGreen);
 }
 
 .color3,
 .color3 a:hover {
-  border-color: var(--color3);
-  color: var(--color3);
+  border-color: var(--ltSeeGreen);
+  color: var(--ltSeeGreen);
 }
 
 .color4,
 .color4 a:hover {
-  border-color: var(--color4);
-  color: var(--color4);
+  border-color: var(--ltGreen);
+  color: var(--ltGreen);
 }
 
 .color6,
 .color6 a:hover {
-  border-color: var(--color6);
-  color: var(--color6);
+  border-color: var(--ltOrange);
+  color: var(--ltOrange);
 }
 
 .color7,
 .color7 a:hover {
-  border-color: var(--color7);
-  color: var(--color7);
+  border-color: var(--dkOrange);
+  color: var(--dkOrange);
 }
 
 .color8,
 .color8 a:hover {
-  border-color: var(--color8);
-  color: var(--color8);
+  border-color: var(--dkdkOrange);
+  color: var(--dkdkOrange);
 }
 
 h4 {
@@ -219,7 +218,7 @@ h4 {
 }
 
 footer {
-  background-color: var(--color5);
+  background-color: var(--ltYellow);
   padding: 30px;
 }
 footer span {
@@ -238,7 +237,7 @@ footer address {
 }
 /* turn on flexbox here - prior to this, elements stacked individually as blocks */
 #popart figure {
-  background-color: var(--color8);
+  background-color: var(--dkdkOrange);
 }
 
 #popart figure img {
@@ -304,11 +303,11 @@ footer address {
   }
 
   nav a {
-    color: var(--color1);
+    color: var(--black);
     background-color: transparent;
   }
   nav a:hover {
-    color: var(--color2);
+    color: var(--dkSeeGreen);
     background-color: transparent;
   }
   #popular li:last-child {
